@@ -1,0 +1,76 @@
+.content{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 32vh;
+    padding: 1em;
+}
+.content ul{
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    height: 52%;
+    overflow-y: scroll;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.content ul li{
+    width: 100%;
+    height: 3.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    padding-bottom: 0;
+}
+.content ul li:hover{
+    border-radius: 0.3em;
+}
+.content ul li p{
+    height: 1em;
+    margin-left: 0.8em;
+    font-weight: 600;
+}
+.top-content{
+    width: 100%;
+    height: 2.8em;
+    display: flex;
+    padding: 0.5em;
+}
+.add-folder{
+    width: 2.1em;
+    height: 1.9em;
+    border: none;
+    border-radius: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.settings-button{
+    width: 2.6em;
+    height: 1.9em;
+    border: none;
+    border-radius: 0.3em;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    outline: none;
+}
+.add-folder i, .settings-button i{
+    font-size: 0.9em;
+}
+.search-block{
+    margin-left: 0.5em;
+    width: 100%;
+    padding: 0;
+    display: flex;
+}
+.search-block input{
+    height: 90%;
+    border: none;
+}
+.search-block input:focus{
+    outline: none;
+    box-shadow: none;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "roundplayer",
+  "version": "1.0.0",
+  "description": "Simple audio player with round design",
+  "main": "main.js",
+  "scripts": {
+    "start": "nw www/"
+  },
+  "keywords": [],
+  "author": "DiabloSat",
+  "license": "ISC",
+  "dependencies": {
+    "nw": "^0.64.0-sdk"
+  }
+}

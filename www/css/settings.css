@@ -1,0 +1,30 @@
+.settings-popup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 33vh;
+    position: fixed;
+    z-index: 6;
+}
+.settings-popup .block{
+    width: 93%;
+    height: 58vh;
+    z-index: 7;
+    border-radius: 0.3em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.settings-popup .block ul{
+    list-style-type: none;
+    padding: 0;
+    padding: 1em;
+}
+.settings-popup .block ul li{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1em;
+    padding-bottom: 0.3em;
+}
+.settings-popup .block ul li p{
+    margin-right: 0.5em;
+}

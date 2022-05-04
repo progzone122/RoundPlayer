@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy">
+    <title>RoundPlayer</title>
+    <link rel="shortcut icon" href="assets/icon.png" type="image/png">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <!-- jQuery plugins -->
+    <link href="js/plugins/roundSlider-1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+    <!-- -->
+</head>
+<body>
+    <div class="loading">
+      <img src="assets/icon.png" alt="">
+    </div>
+    <header>
+        <div class="timeline-slider" style='z-index: 1; position: fixed;'>
+        </div>
+        <div class='timeline-slider2' style='z-index: 2; position: fixed;'></div>   
+        <button id="playbtn" style='z-index: 3; position: fixed;'><i class="bi bi-play-fill"></i></button>
+        <button id="leftbtn" style='z-index: 2; position: fixed;'><i class="bi bi-skip-backward-fill"></i></button>
+        <button id="rightbtn" style='z-index: 2; position: fixed;'><i class="bi bi-skip-backward-fill"></i></button>     
+    </header>
+    <div class="content">
+      <div class="top-content">
+        <div style="width: 50%; display: flex;">
+          <button class="settings-button" onclick="$('.settings-popup').fadeIn()"><i class="bi bi-gear-fill"></i></button>
+            <div style="height: 2em;" class="search-block">
+              <input type="text" class="form-control" placeholder="Поиск" id="search-input" data-list=".playlist">
+            </div>
+
+        </div>
+        <div style="width: 50%; display: flex; justify-content: flex-end;">
+          <!--<button class="settings-button" onclick="$('.youtube-popup').fadeIn()" style="width: 2em; margin-right: 0.5em;"><i class="bi bi-youtube"></i></button>-->
+          <label class="add-folder"><i class="bi bi-folder-fill"></i> <input type="file" id="importDirectory" webkitdirectory style="display: none;"></label>
+        </div>
+      </div>
+      <ul class="playlist"></ul>
+    </div>
+    <div class="player-block">
+        <div class="playing-banner">
+            <i class="bi bi-music-note-list"></i>
+        </div>
+        <p>Выберите трек</p>
+    </div>
+    <!-- youtube popup -->
+    <!--<div class="youtube-popup">
+      <div class="block">
+        <div style="width: 100%; padding: 0.5em;">
+          <button class="settings-button" style="width: 2.2em;" onclick="$('.youtube-popup').fadeOut()"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div style="padding: 1em;">
+          <div style="height: 2em; display: flex;">
+            <input type="text" class="form-control" placeholder="Введите URL видео" id="youtube-input">
+            <button class="settings-button" style="width: 2.7em;" onclick="youtube_download($('#youtube-input').val()); $('.youtube-popup').fadeOut();"><i class="bi bi-download"></i></button>
+          </div>
+          <hr style="margin-bottom: 0.1em;">
+        </div>
+      </div>
+    </div>-->
+    <!-- settings popup -->
+    <div class="settings-popup" style="display: none;">
+      <div class="block">
+        <div style="width: 100%; padding: 0.5em;">
+          <button class="settings-button" style="width: 2.2em;" onclick="$('.settings-popup').fadeOut()"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <ul>
+          <li>
+            <p style="margin-top: 0.5em;"><b>Тема: </b></p>
+            <div>
+            <input type="radio" class="btn-check" id="theme_option1" autocomplete="off">
+            <label class="btn btn-secondary" for="option1" onclick="change_theme('dark')">Тёмная</label>
+
+            <input type="radio" class="btn-check" id="theme_option2" autocomplete="off">
+            <label class="btn btn-secondary" for="option2" onclick="change_theme('light')">Светлая</label>
+
+            <input type="radio" class="btn-check" id="theme_option3" autocomplete="off">
+            <label class="btn btn-secondary" for="option2" onclick="change_theme('custom')">Кастомная</label>
+            </div>
+          </li>
+          <li>
+            <p><b>Версия RoundPlayer: </b></p><p>Prototype 0.0.2</p>
+          </li>
+          <li style="display: block;">
+            <p><b>GitHub: </b>https://github.com/progzone122</p>
+            <p><b>Telegram: </b>https://t.me/DiabloSat</p>
+            <p><b>Discord: </b>diablosatan#4533</p>
+            <p><b>YouTube: </b>https://www.youtube.com/c/<br>ProgrammingZone_official</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+</body>
+<!-- JS -->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<!-- jQuery plugins -->
+<script src="js/plugins/roundSlider-1.6.1/dist/roundslider.min.js"></script>
+<script src="js/plugins/jquery.hideseek.js"></script>
+<script src="js/player.js"></script>
+<script src="js/app.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/theme.js"></script>
+<!--<script src="js/player.js"></script>-->
+</html>

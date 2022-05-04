@@ -1,0 +1,90 @@
+.content{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 32vh;
+    padding: 1em;
+}
+.content ul{
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    height: 52%;
+    background-color: #212121;
+    overflow-y: scroll;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.content ul li{
+    width: 100%;
+    height: 3.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    padding-bottom: 0;
+}
+.content ul li:hover{
+    background-color: #1a1a1a;
+    border-radius: 0.3em;
+}
+.content ul li p{
+    color: white;
+    height: 1em;
+    margin-left: 0.8em;
+    font-weight: 600;
+}
+.top-content{
+    width: 100%;
+    height: 2.8em;
+    background-color: #212121;
+    display: flex;
+    padding: 0.5em;
+}
+.add-folder{
+    width: 2.1em;
+    height: 1.9em;
+    border: none;
+    border-radius: 0.3em;
+    background-color: #454545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.settings-button{
+    width: 2.6em;
+    height: 1.9em;
+    border: none;
+    border-radius: 0.3em;
+    background-color: #454545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    outline: none;
+}
+.add-folder:hover, .settings-button:hover{
+    background-color: #1a1a1a;
+}
+.add-folder i, .settings-button i{
+    color: white;
+    font-size: 0.9em;
+}
+.search-block{
+    margin-left: 0.5em;
+    width: 100%;
+    padding: 0;
+    display: flex;
+}
+.search-block input{
+    height: 90%;
+    background-color: #454545;
+    border: none;
+    color: white;
+}
+.search-block input:focus{
+    color: white;
+    background-color: #2b2b2b;
+    outline: none;
+    box-shadow: none;
+}

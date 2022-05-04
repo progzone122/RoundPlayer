@@ -1,0 +1,53 @@
+body{
+    overflow: hidden;
+}
+.loading{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading img{
+    width: 7em;
+    height: 7em;
+    margin-bottom: 5em;
+}
+::-webkit-scrollbar-corner{
+    box-shadow: none;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.4em;
+}
+a{
+    text-decoration: none;
+}
+.youtube-popup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 33vh;
+    position: fixed;
+    z-index: 6;
+    align-items: flex-end;
+}
+.youtube-popup .block{
+    width: 93%;
+    z-index: 7;
+    border-radius: 0.3em;
+}
+.youtube-popup .block input{
+    height: 97%;
+    border: none;
+    margin-right: 0.5em;
+}
+.youtube-popup .block input:focus{
+    outline: none;
+    box-shadow: none;
+}

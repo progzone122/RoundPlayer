@@ -1,0 +1,112 @@
+{
+    "name": "dark",
+    "description": "RoundPlayer official dark theme",
+    "author": "DiabloSat",
+    "license": "ISC",
+
+    "theme": {
+        "p, label": {
+            "color": "white"
+        },
+        "body": {
+            "background-color":  "#333333"
+        },
+        "::-webkit-scrollbar": {
+            "background-color": "#454545"
+        },
+        "::-webkit-scrollbar-thumb": {
+            "background-color": "#6c6c6c"
+        },
+        "::-webkit-scrollbar-corner": {
+            "background-color": "#333333"
+        },
+        ".youtube-popup .block": {
+            "background-color": "#212121"
+        },
+        ".youtube-popup .block input": {
+            "background-color": "#454545",
+            "color": "white"
+        },
+        ".youtube-popup .block input:focus": {
+            "background-color": "#2b2b2b",
+            "color": "white"
+        },
+        ".content ul": {
+            "background-color": "#212121"
+        },
+        ".content ul li:hover": {
+            "background-color": "#1a1a1a"
+        },
+        ".content ul li p": {
+            "color": "white"
+        },
+        ".top-content": {
+            "background-color": "#212121"
+        },
+        ".add-folder": {
+            "background-color": "#454545"
+        },
+        ".settings-button": {
+            "background-color": "#454545"
+        },
+        ".add-folder:hover, .settings-button:hover": {
+            "background-color": "#1a1a1a"
+        },
+        ".add-folder i, .settings-button i": {
+            "color": "white"
+        },
+        ".search-block input": {
+            "background-color": "#454545",
+            "color": "white"
+        },
+        ".search-block input:focus": {
+            "color": "white",
+            "background-color": "#2b2b2b"
+        },
+        ".rs-control .rs-range-color": {
+            "background-color": "#202020"
+        },
+        ".rs-control .rs-path-color": {
+            "background-color": "#494949"
+        },
+        ".rs-control .rs-handle:after": {
+            "background-color": "#212121"
+        },
+        ".rs-control .rs-handle": {
+            "background-color": "#212121"
+        },
+        ".rs-control .rs-handle:hover": {
+            "background-color": "#565656"
+        },
+        ".rs-control .rs-bg-color": {
+            "background-color": "#333333"
+        },
+        "#playbtn, #leftbtn, #rightbtn": {
+           "background-color": "#212121"
+        },
+        "#playbtn:hover, #leftbtn:hover, #rightbtn:hover": {
+            "background-color": "#565656"
+        },
+        "#playbtn i, #leftbtn i, #rightbtn i": {
+            "color": "white"
+        },
+        ".player-block": {
+            "background-color": "#212121"
+        },
+        ".playing-banner": {
+            "background-color": "#454545"
+        },
+        ".playing-banner i, .banner i": {
+            "color": "white"
+        },
+        ".banner": {
+            "background-color": "#454545"
+        },
+        ".settings-popup .block": {
+            "background-color": "#212121"
+        },
+        ".settings-popup .block ul li": {
+            "border-bottom": "2px solid rgba(255, 255, 255, 0.3)"
+        }
+    }
+}
