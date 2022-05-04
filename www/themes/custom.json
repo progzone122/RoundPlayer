@@ -1,1 +1,15 @@
-{}
+{
+    "name": "template",
+    "description": "Template for writing a RoundPlayer theme",
+    "author": "none",
+    "license": "ISC",
+
+    "theme": {
+        "p, label": {
+            "color": "black"
+        },
+        "body": {
+            "background-color":  "white"
+        }
+    }
+}

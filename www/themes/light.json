@@ -1,1 +1,99 @@
-{}
+{
+    "name": "light",
+    "description": "RoundPlayer official light theme",
+    "author": "DiabloSat",
+    "license": "ISC",
+
+    "theme": {
+        "p, label": {
+            "color": "black"
+        },
+        "body": {
+            "background-color":  "white"
+        },
+        "::-webkit-scrollbar": {
+            "background-color": "#ededed"
+        },
+        "::-webkit-scrollbar-thumb": {
+            "background-color": "#dbdbdb"
+        },
+        ".youtube-popup .block": {
+            "background-color": "#212121"
+        },
+        ".youtube-popup .block input": {
+            "background-color": "#454545",
+            "color": "black"
+        },
+        ".youtube-popup .block input:focus": {
+            "background-color": "#ededed",
+            "color": "white"
+        },
+        ".content ul li:hover": {
+            "background-color": "#ededed"
+        },
+        ".content ul li p": {
+            "color": "black"
+        },
+        ".add-folder": {
+            "background-color": "#ededed"
+        },
+        ".settings-button": {
+            "background-color": "#ededed"
+        },
+        ".add-folder:hover, .settings-button:hover": {
+            "background-color": "#dbdbdb"
+        },
+        ".add-folder i, .settings-button i": {
+            "color": "#a1a1a1"
+        },
+        ".search-block input": {
+            "background-color": "transparent",
+            "color": "white"
+        },
+        ".search-block input:focus": {
+            "color": "gray",
+            "background-color": "#ededed"
+        },
+        ".rs-control .rs-range-color": {
+            "background-color": "#dbdbdb"
+        },
+        ".rs-control .rs-path-color": {
+            "background-color": "#f0f0f0"
+        },
+
+        ".rs-control .rs-handle:hover": {
+            "background-color": "#ededed"
+        },
+        ".rs-control .rs-bg-color": {
+            "background-color": "white"
+        },
+        "#playbtn, #leftbtn, #rightbtn": {
+           "background-color": "#ededed"
+        },
+        "#playbtn:hover, #leftbtn:hover, #rightbtn:hover": {
+            "background-color": "#dbdbdb"
+        },
+        "#playbtn i, #leftbtn i, #rightbtn i": {
+            "color": "#a1a1a1"
+        },
+        ".player-block": {
+            "border-top": "0.2em solid #f2f2f2",
+            "padding": "0.5em"
+        },
+        ".playing-banner": {
+            
+        },
+        ".playing-banner i, .banner i": {
+            "color": "#a1a1a1"
+        },
+        ".banner": {
+            
+        },
+        ".settings-popup .block": {
+            "background-color": "white"
+        },
+        ".settings-popup .block ul li": {
+            "border-bottom": "2px solid rgba(255, 255, 255, 0.3)"
+        }
+    }
+}
