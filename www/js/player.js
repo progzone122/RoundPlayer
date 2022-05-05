@@ -90,7 +90,7 @@ function setTime(){
       window.now_track = window.now_track + 1;
       window.audio.play();
       window.audio.volume = window.slider_volume;
-      $(".timeline-slider").roundSlider({max: window.audio.duration})
+      setTimeout(() => $(".timeline-slider").roundSlider({max: window.audio.duration}), 1000);
       $('.player-block p').text(playlist[window.now_track].name);
     }
   }
@@ -108,7 +108,7 @@ $('#leftbtn').on('click', function(){
     window.now_track = window.now_track - 1;
     window.audio.play();
     window.audio.volume = window.slider_volume;
-    $(".timeline-slider").roundSlider({max: window.audio.duration});
+    setTimeout(() => $(".timeline-slider").roundSlider({max: window.audio.duration}), 1000);
     $('.player-block p').text(playlist[window.now_track].name);
     if (!window.audio.paused) {
       $('#playbtn i').removeClass('bi bi-play-fill').addClass('bi bi-pause-fill');
@@ -126,7 +126,7 @@ $('#rightbtn').on('click', function(){
     window.now_track = window.now_track + 1;
     window.audio.play();
     window.audio.volume = window.slider_volume;
-    $(".timeline-slider").roundSlider({max: window.audio.duration});
+    setTimeout(() => $(".timeline-slider").roundSlider({max: window.audio.duration}), 1000);
     $('.player-block p').text(playlist[window.now_track].name);
     if (!window.audio.paused) {
       $('#playbtn i').removeClass('bi bi-play-fill').addClass('bi bi-pause-fill');
