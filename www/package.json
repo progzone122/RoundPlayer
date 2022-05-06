@@ -19,7 +19,7 @@
     "height": 750,
     "show": true,
     "kiosk": false,
-    "theme": "light"
+    "theme": "dark"
   },
   "webkit": {
     "plugin": true,

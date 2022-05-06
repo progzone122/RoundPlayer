@@ -41,3 +41,14 @@ function change_theme(theme){
     }
     alert("Перезагрузите приложение для применения изменений");
 }
+function import_theme(){
+    $('#importtheme').on('change', function(){
+        if ($(this).val()) { 
+            let file_import = document.getElementById("importtheme");
+            let i_theme = fs.readFileSync(file_import.files[0].path, 'utf8');
+            console.log(i_theme);
+            fs.writeFileSync("themes/custom.json", i_theme);
+            change_theme("custom");
+        }
+    });
+}
