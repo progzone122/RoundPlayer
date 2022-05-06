@@ -24,19 +24,19 @@ function change_theme(theme){
             $("#theme_option1").prop("checked", true);
             $("#theme_option2, #theme_option3").prop("checked", false);
             window.settings.window.theme = "dark";
-            fs.writeFileSync("package.json", JSON.stringify(window.settings));
+            fs.writeFileSync("package.json", JSON.stringify(window.settings, null, 2));
         break;
         case "light":
             $("#theme_option2").prop("checked", true);
             $("#theme_option1, #theme_option3").prop("checked", false);
             window.settings.window.theme = "light";
-            fs.writeFileSync("package.json", JSON.stringify(window.settings));
+            fs.writeFileSync("package.json", JSON.stringify(window.settings, null, 2));
         break;
         case "custom":
             $("#theme_option3").prop("checked", true);
             $("#theme_option1, #theme_option2").prop("checked", false);
             window.settings.window.theme = "custom";
-            fs.writeFileSync("package.json", JSON.stringify(window.settings));
+            fs.writeFileSync("package.json", JSON.stringify(window.settings, null, 2));
         break;
     }
     alert("Перезагрузите приложение для применения изменений");
